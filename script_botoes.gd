@@ -1,0 +1,33 @@
+extends Node2D
+
+func _ready():
+	$cutscene1.hide()
+	$cutscene2.hide()
+	$cutscene3.hide()
+	$cutscene4.hide()
+	$cutscene5.hide()
+	$cutscene6.hide()
+	$cutscene7.hide()
+	$cutscene8.hide()
+
+func _on_Butao_Start_pressed():
+	$Background.hide()
+	$Weather.hide()
+	$Butao_Opcoes.hide()
+	$Butao_Start.hide()
+	$Audio_chuva.stop()
+	$cutscene1.show()
+	yield(get_tree().create_timer(3.0),"timeout")
+	$cutscene2.show()
+	yield(get_tree().create_timer(3.0),"timeout")
+	$cutscene3.show()
+	yield(get_tree().create_timer(3.0),"timeout")
+	$cutscene4.show()
+	yield(get_tree().create_timer(3.0),"timeout")
+	$cutscene5.show()
+	yield(get_tree().create_timer(3.0),"timeout")
+	$cutscene6.show()
+	yield(get_tree().create_timer(3.0),"timeout")
+	$cutscene7.show()
+	yield(get_tree().create_timer(3.0),"timeout")
+	$cutscene8.show()
